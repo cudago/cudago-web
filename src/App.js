@@ -1,17 +1,17 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import './App.css';
+import HeroSection from './components/HeroSection';
+import Home from './components/pages/Home';
 
 function App() {
   return (
     <>
       <Router>
         <Navbar />
+        <HeroSection />
         <Routes>
-          <Route path='/' element={<h1>Home</h1>} />
-          {/* <Route path='/services' element={<h1>Services</h1>} />
-          <Route path='/products' element={<h1>Products</h1>} />
-          <Route path='/sign-up' element={<h1>Sign Up</h1>} /> */}
+          <Route path='/' exact Component={Home} />
         </Routes>
       </Router>
     </>
