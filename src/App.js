@@ -9,7 +9,6 @@ function App() {
     <>
       <Router>
         <Navbar />
-        <HeroSection />
         <Routes>
           <Route path='/' exact Component={Home} />
         </Routes>
