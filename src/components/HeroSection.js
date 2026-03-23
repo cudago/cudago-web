@@ -5,15 +5,26 @@ import './HeroSection.css'
 function HeroSection() {
   return (
     <div className='hero-container'>
-        <img src='/images/img-8.jpg' alt='Hero' />
-        <h1>ADVENTURE AWAITS</h1>
-        <p>What are you waiting for?</p>
+        <img src='/images/cleaningBG_1.jpg' alt='Hero' />
+
+        <h1>Find Trusted Professionals Near You</h1>
+        <p>From home services to personal care — book experts instantly.</p>
+
         <div className='hero-btns'>   
-            <Button className='btns' buttonStyle='btn--outline' buttonSize='btn--large'>
-                GET STARTED
+            <Button 
+              className='btns' 
+              buttonStyle='btn--outline' 
+              buttonSize='btn--large'
+            >
+                Book Now
             </Button>
-            <Button className='btns' buttonStyle='btn--primary' buttonSize='btn--large'>
-                WATCH TRAILER <i className='far fa-play-circle' />
+
+            <Button 
+              className='btns' 
+              buttonStyle='btn--primary' 
+              buttonSize='btn--large'
+            >
+                Explore Services <i className='far fa-arrow-alt-circle-right' />
             </Button>
         </div>
 
