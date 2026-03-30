@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 import './Footer.css';
 
 function Footer() {
@@ -31,6 +32,9 @@ function Footer() {
             <li><a href="#">Team</a></li>
             <li><a href="#">Services</a></li>
             <li><a href="#">Contact</a></li>
+            {/* <li>
+              <Link to="/terms">Terms & Conditions</Link>
+            </li> */}
           </ul>
         </div>
 
@@ -49,6 +53,10 @@ function Footer() {
       {/* BOTTOM */}
       <div className="footer-bottom">
         <p>© 2026 Cudago. All rights reserved.</p>
+
+        <div className="footer-legal">
+          <Link to="/terms">Terms and Conditions</Link>
+        </div>
       </div>
     </div>
   );

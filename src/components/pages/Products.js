@@ -1,9 +1,25 @@
-import React from 'react'
-import '../../App.css'
+import React from "react";
+import "./Product.css";
 
-
-export default function Products() {
+function Products() {
   return (
-    <h1 className='products'>PRODUCTS</h1>
-  )
+    <div className="products-container">
+      
+      <div className="products-content">
+
+        <div className="soft-shape"></div>
+
+        <h1>Products</h1>
+        <h2>Coming Soon</h2>
+
+        <p>
+          We're quietly building something meaningful. It’ll be worth the wait.
+        </p>
+
+      </div>
+
+    </div>
+  );
 }
+
+export default Products;
