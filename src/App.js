@@ -3,10 +3,12 @@ import Navbar from './components/Navbar';
 import './App.css';
 import HeroSection from './components/HeroSection';
 import Home from './components/pages/Home';
+import ScrollToTop from './common/ScrollToTop';
 
 function App() {
   return (
     <>
+    <ScrollToTop />
       <Router>
         <Navbar />
         <Routes>
