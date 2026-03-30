@@ -1,0 +1,136 @@
+/* SECTION */
+.cards {
+  padding: 4rem 2rem;
+  background: #f8fafc; /* LIGHT BACKGROUND */
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #0f172a;
+}
+
+/* CONTAINER */
+.cards__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 1120px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cards__wrapper {
+  position: relative;
+  margin: 40px 0;
+}
+
+.cards__items {
+  margin-bottom: 24px;
+}
+
+/* KEEP ORIGINAL CARD SIZE */
+.cards__item {
+  display: flex;
+  flex: 1;
+  margin: 0 1rem;
+  border-radius: 12px;
+  transition: transform 0.25s ease;
+}
+
+/* GLASS EFFECT (LIGHT) */
+.cards__item__link {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px);
+
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+
+  border: 1px solid rgba(0, 0, 0, 0.05);
+
+  /* subtle shadow */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+
+  transition: all 0.3s ease;
+}
+
+/* IMAGE WRAPPER (KEEP SQUARE FEEL) */
+.cards__item__pic-wrap {
+  position: relative;
+  width: 100%;
+  padding-top: 100%; /* PERFECT SQUARE */
+  overflow: hidden;
+}
+
+/* CATEGORY TAG */
+.cards__item__pic-wrap::after {
+  content: attr(data-category);
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+
+  padding: 6px 10px;
+  font-size: 12px;
+  font-weight: 600;
+
+  color: #fff;
+  background: linear-gradient(90deg, #38bdf8, #6366f1);
+
+  border-radius: 6px;
+}
+
+/* IMAGE */
+.cards__item__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  transition: transform 0.4s ease;
+}
+
+/* TEXT */
+.cards__item__info {
+  padding: 18px;
+}
+
+.cards__item__text {
+  color: #1e293b;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+/* HOVER (SUBTLE) */
+.cards__item:hover {
+  transform: translateY(-5px);
+}
+
+.cards__item__link:hover {
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+}
+
+.cards__item__img:hover {
+  transform: scale(1.05);
+}
+
+/* DESKTOP */
+@media only screen and (min-width: 1024px) {
+  .cards__items {
+    display: flex;
+  }
+}
+
+/* MOBILE */
+@media only screen and (max-width: 1024px) {
+  .cards__item {
+    margin-bottom: 2rem;
+  }
+}
