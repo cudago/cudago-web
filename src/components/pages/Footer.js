@@ -16,29 +16,25 @@ function Footer() {
           </p>
 
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-facebook-f"></i></a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-instagram"></i></a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i className="fab fa-twitter"></i></a>
           </div>
         </div>
 
-        {/* CENTER - LINKS */}
         <div className="footer-section">
           <h2>Quick Links</h2>
           <ul>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Careers</a></li>
-            <li><a href="#">Team</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-            {/* <li>
-              <Link to="/terms">Terms & Conditions</Link>
-            </li> */}
+            <li><a href="/\#about">About</a></li>
+            <li><a href="/\#careers">Careers</a></li>
+            <li><a href="/\#team">Team</a></li>
+            <li><a href="/services">Services</a></li>
+            <li><a href="/\#contact">Contact</a></li>
           </ul>
         </div>
 
-        {/* RIGHT - CONTACT FORM */}
+        
         <div className="footer-section">
           <h2>Send Message</h2>
           <form className="footer-form">
@@ -50,7 +46,7 @@ function Footer() {
 
       </div>
 
-      {/* BOTTOM */}
+     
       <div className="footer-bottom">
         <p>© 2026 Cudago. All rights reserved.</p>
 

@@ -9,7 +9,6 @@ import SignUp from './components/pages/SignUp';
 import Terms from './components/pages/Terms';
 
 import ScrollToTop from './common/ScrollToTop';
-import Footer from './components/pages/Footer';
 
 function App() {
   return (
